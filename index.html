@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="year" content="2021">
+    <meta name="description" content="a simple google-like sign in form using googles own best sign in form practices.">
+    <script src="./page-javascript/main-app.js"></script>
+    <link rel="stylesheet" href="./page-stylesheets/stylesheet.css">
+    <link rel="icon" href="./Gmail.ico" type="image/x-icon">
+    <title>Sign in to your google account</title>
+</head>
+<body>
+    
+    <header class="google-header">
+        <a href="index.html"><img style="border: none;text-align: center; margin: 10px;" src="/page-assets/Home.ico" alt="Home Button" height="48px" width=48px></a>
+        <a style="border: none; list-style: none; color: #ffffff; font-size: 30px; text-align: center; margin: 10px;" href="https://www.google.com/">Google</a>
+        <span class="open-slide">
+            <a href="#" onclick="openSideMenu()">
+                <img class="menu-Button" src="./page-assets/burger_menu.ico" alt="App Menu Button" height="48px" width=48px>
+            </a>
+        </span>
+    </header>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="closeButton" onclick="closeSideMenu()">&times;</a>
+        <a href="#"><img src="./page-assets/Google.ico" height="48px" width="48px" style="border: none;" alt="Google Search Engine Link"></a>
+        <a href="#"> <img src="./page-assets/Google_Drive.ico" alt="Google Drive Link" height="48px" width="48px" style="border: none;"></a>
+        <a href="#"> <img src="./page-assets/Youtube.ico" alt="Youtube link" height="48px" width="48px" style="border: none;"></a>
+        <a href="#"> <img src="./page-assets/favicon.png" alt="Google Developers Link" height="48px" width="48px" style="border: none;"></a>
+
+    </div>
+
+    
+    <div class="google-content__signin">
+        <h4>Google Sign In</h4>
+        <div class="img-container">
+            <img src="./page-assets/Account.ico" alt="User profile picture" height="100px" width="100px">
+        </div>
+        
+        <label for="email">Email</label>
+        <form>
+            <input class="google-email" type="Email" id="email" placeholder="Email or Phone Number" required>
+        </form>
+
+        <label for="password">Password</label>
+        <form>
+            <input class="google-password" type="password" id="password" placeholder="Password" required>
+        </form>
+
+        <form>
+            <button class="google-signin__button">Sign In</button>
+        </form>
+        <p style="text-align: center; font-size: 14px; margin: 10px;">By clicking "Sign In" you agree<br>to Google's <a href="#">Privacy Policy</a> and<br> <a href="#"> Terms and Conditions.<br></a></p>
+    </div>
+</body>
+</html>
